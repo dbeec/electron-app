@@ -21,7 +21,6 @@ const schema = yup
   .required()
 
 export default function App(): JSX.Element {
-  // const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
   const {
     register,
     reset,
@@ -84,7 +83,7 @@ export default function App(): JSX.Element {
               error={!!errors.password}
               helperText={errors.password?.message}
               FormHelperTextProps={{
-                sx: { fontSize: '.8rem', lineHeight: '14px' }
+                sx: { fontSize: '.8rem', lineHeight: '13px' }
               }}
               InputLabelProps={{
                 sx: {
